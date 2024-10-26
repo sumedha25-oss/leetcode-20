@@ -1,0 +1,42 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+// Approach - I
+import java.util.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        int i,j,l,k=0,flag=0;
+        Scanner sc = new Scanner(System.in);
+        l = sc.nextInt();
+        int[] ar = new int[l];
+        for(i=0;i<l;i++)
+        {
+            ar[i]=sc.nextInt();
+        }
+        System.out.println("Hello");
+        ar[k]=ar[0];
+        k++;
+        for(i=1;i<l;i++){
+            flag=0;
+            for(j=0;j<i;j++){
+                if(ar[i]==ar[j]){
+                    flag++;
+                    break;
+                }
+            }
+            if(flag==0)
+                ar[k++]=ar[i];
+        }
+        for(i=0;i<k;i++){
+            System.out.println(ar[i]);
+        }
+	}
+}
+Approach - II
+Sort the array and then remove duplicates
+
+Approach - III
+Use hashset to remove duplicates from un sorted array
