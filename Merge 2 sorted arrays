@@ -1,0 +1,16 @@
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        //System.out.println(nums1.length);
+        int i,j=0,k=0;
+        for(i=m;i<nums1.length;i++){
+            //if(nums1[i]==0){
+                //System.out.println(i);
+                nums1[i]=nums2[j++];
+            //}
+        }
+        for(i=0;i<nums1.length;i++)
+            System.out.print(nums1[i]+" ");
+
+        Arrays.sort(nums1);
+    }
+}
